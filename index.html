@@ -88,12 +88,6 @@
     gap: 24px !important;
   }
 
-  .prev-parent:hover .prev{
-    transform: rotateX(180deg);
-  }
-  .next-parent:hover .next{
-    transform: rotateX(180deg);
-  }
 
   .slick-dots li button:before{
     color: transparent !important;
@@ -509,7 +503,7 @@
             Team</p>
         <div class="flex max-2xl:flex-col max-w-[1535px] mx-auto items-center">
             <div class="prev-parent max-2xl:!hidden">
-                <img class="prev transition-all ease-linear duration-300 max-w-[74px]"
+                <img class="cursor-pointer prev transition-all ease-linear duration-300 max-w-[74px]"
                     src="./assets/images/svg/red-prev-arrow.svg" alt="red-prev-arrow">
             </div>
             <div class="container">
@@ -554,7 +548,7 @@
                 </div>
             </div>
             <div class="next-parent max-2xl:!hidden">
-                <img class="next transition-all ease-linear duration-300 max-w-[74px]"
+                <img class="next cursor-pointer transition-all ease-linear duration-300 max-w-[74px]"
                     src="./assets/images/svg/red-next-arrow.svg" alt="red-next-arrow">
             </div>
         </div>
