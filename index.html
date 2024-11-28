@@ -1,0 +1,663 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaijuucrew</title>
+  <link rel="shortcut icon" href="/assets/images/svg/hero-section-img.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding:'12px',
+          center: true,
+          screens: {
+            sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1320px',
+          },
+        },
+        extend: {
+          fontFamily: {
+            godzila: ['godzila', 'sans-serif'],
+            oswald: ['Oswald', 'sans-serif'],
+            rightoues:['Righteous', 'sans-serif']
+          },
+          fontSize:{
+            'sm-xl':'40px',
+            'sm-text':'22px',
+            'md-3xl':'113px',
+            'lg-4xl':'145px',
+            'sm-lg':'30px'
+          },
+          colors:{
+            'redLight':'#FF002A',
+            'lightBlack':'#001120',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Oswald:wght@200..700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sawarabi+Gothic&display=swap');
+
+    @font-face {
+      font-family: "godzila";
+      src: url("/assets/font/Godzilla.ttf") format("truetype");
+    }
+    
+
+@keyframes slide-right {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .slide-scroll-left {
+    animation: slide-right 10s linear infinite;
+  }
+
+  .slide-scroll-left:hover {
+    animation-play-state: paused;
+  }
+     .blur-1 {
+
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(141.11deg, rgba(255, 255, 255, 0.25) -1.59%, rgba(255, 255, 255, 0.09) 102.57%);
+  }
+
+    .slick-track{
+    display: flex !important;
+    gap: 24px !important;
+  }
+
+  .prev-parent:hover .prev{
+    transform: rotateX(180deg);
+  }
+  .next-parent:hover .next{
+    transform: rotateX(180deg);
+  }
+
+  .slick-dots li button:before{
+    color: transparent !important;
+    background-color: white;
+    opacity: 30% !important;
+    width: 20px !important;
+    height: 10px !important;
+    border-radius: 30px;
+  }
+
+  .slick-dots li.slick-active button:before{
+    color: transparent !important;
+    background-color: white;
+    opacity: 100% !important;
+    width: 20px !important;
+
+  }
+
+.bg-gardient{
+  background: linear-gradient(180deg, #001120 0%, rgba(0, 17, 32, 0) 100%) !important;
+
+}
+
+  </style>
+</head>
+
+<body class="font-oswald max-w-[1920px] mx-auto bg-lightBlack">
+  <!-- -------hero section -->
+  <section class="bg-[url('assets/images/png/herosection-bg-img.png')] bg-no-repeat bg-cover bg-center">
+    <header class="bg-black py-9 max-lg:py-5">
+      <div class="container">
+        <nav class="flex items-center justify-between">
+          <a href=""><img src="/assets/images/svg/kaijuucrew-logo.svg" alt="logo"></a>
+          <div id="navbar-icon" class="flex-col flex gap-1 lg:hidden">
+            <span class="w-10 h-2 bg-white rounded-full "></span>
+            <span class="w-10 h-2 bg-white rounded-full "></span>
+            <span class="w-10 h-2 bg-white rounded-full "></span>
+          </div>
+          <div class="max-lg:hidden">
+            <ul class="flex items-center gap-[53px]">
+              <li><a href="" class="text-white text-sm-text font-normal hover:text-redLight transition-all duration-300 ease-linear">About Us</a></li>
+              <li><a href="" class="text-white text-sm-text font-normal hover:text-redLight transition-all duration-300 ease-linear">Story</a></li>
+              <li><a href="" class="text-white text-sm-text font-normal hover:text-redLight transition-all duration-300 ease-linear">Traits</a></li>
+              <li><a href="" class="text-white text-sm-text font-normal hover:text-redLight transition-all duration-300 ease-linear">Roadmap</a></li>
+              <li><a href="" class="text-white text-sm-text font-normal hover:text-redLight transition-all duration-300 ease-linear">Team</a></li>
+              <li><a href="" class="text-white text-sm-text font-normal hover:text-redLight transition-all duration-300 ease-linear">FAQ</a></li>
+              <li><a class="flex items-center text-white text-sm-text font-normal gap-2 hover:text-redLight transition-all duration-300 ease-linear" href=""><img
+                    src="/assets/images/svg/usa-flag-icon.svg" alt="flag">ENG <img
+                    src="/assets/images/svg/down-arrow.svg" alt="arrow"></a></li>
+            </ul>
+          </div>
+          <div id="navbar-items"
+            class="lg:hidden w-full h-full bg-gray-950 backdrop-blur-0 fixed z-50 top-0 right-[-100%] py-12 px-20 flex items-center justify-center flex-col gap-7">
+
+            <p class="xl-sm-menu-item text-white font-normal text-sm-text leading-[100%]"><a href="">About Us</a> </p>
+            <p class="xl-sm-menu-item text-white font-normal text-sm-text leading-[100%]"><a href="">Story</a> </p>
+            <p class="xl-sm-menu-item text-white font-normal text-sm-text leading-[100%]"><a href="">Traits</a> </p>
+            <p class="xl-sm-menu-item text-white font-normal text-sm-text leading-[100%]"><a href="">Roadmap</a></p>
+            <p class="xl-sm-menu-item text-white font-normal text-sm-text leading-[100%]"><a href="">Team</a></p>
+            <p class="xl-sm-menu-item text-white font-normal text-sm-text leading-[100%]"><a href="">FAQ</a></p>
+            <p class="xl-sm-menu-item text-white font-normal text-sm-text leading-[100%]"><a href=""
+                class="flex items-center gap-3 transition-all duration-300 ease-linear hover:text-redLight"><img src="/assets/images/svg/usa-flag-icon.svg" alt="flag">ENG <img
+                  src="/assets/images/svg/down-arrow.svg" alt="arrow"></a></p>
+            <i id="cross"
+              class="cursor-pointer ri-close-large-fill absolute top-[5%] right-[5%] bg-white w-12 h-9 rounded-full text-center flex items-center justify-center"></i>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="flex items-center max-md:flex-wrap">
+        <div class="w-6/12 max-lg:w-full">
+          <div class="pt-14 max-lg:pt-10 max-md:pt-7 max-sm:pt-4">
+            <h1 class="text-redLight text-lg-4xl max-xl:text-9xl max-lg:text-7xl max-md:text-5xl max-sm:text-4xl font-godzila font-normal max-w-[456px] leading-[87%] max-md:max-w-none max-md:text-center">Kaijuu <span class="text-white">Crew</span></h1>
+            <p class="text-white text-sm-text font-normal max-w-[325px] pt-4 max-md:max-w-none max-md:text-center max-md:text-xl">The ocean surges with spray and foam,
+              As Kaijuu rise from depth to roam.
+              Thirty-three hundred, and thirty-three more,
+              Decked in garbs from days of yore.
+              We scour the earth and sea and air,
+              Our mission so grave few would dare.
+              In search of untold wealth to hoard?
+              Nay, but 'cause your Apes are Bored.
+            </p>
+            <p class="font-bold text-5xl max-lg:text-3xl max-sm:text-2xl pt-[18px] leading-[150%] text-white max-md:text-center">10:20:15:10</p>
+            <p class="text-lg font-normal leading-[150%] text-white opacity-70 pb-[18px] max-md:text-center">Days left</p>
+            <div class="flex items-center gap-4 max-md:flex-wrap max-md:justify-center">
+              <button class="hover:scale-[1.09] transition-all duration-300 ease-linear rounded-lg py-3 px-9 w-full max-w-[198px] bg-redLight text-white gap-3 flex items-center"><img src="/assets/images/svg/discord-icon.svg" alt="discord"> join discord</button>
+              <button class="hover:scale-[1.09] transition-all duration-300 ease-linear rounded-lg py-3 px-9 w-full max-w-[198px] bg-redLight text-white">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-6/12 max-lg:w-full">
+          <img src="/assets/images/svg/hero-section-img.svg" alt="hero-section-img" class="w-full max-w-[707px]">
+        </div>
+      </div>
+    </div>
+    <div class="overflow-hidden">
+            <div class="flex slide-scroll-left">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-one.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-two.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-three.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-four.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-five.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-six.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-eight.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-nine.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-ni.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-ten.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-thirteen.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-tweleve.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/kakashi-dino-icon.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-one.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-two.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-three.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-four.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-se.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-five.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-tweleve.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-nine.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/dino-icon-thirteen.svg" alt="">
+            </div>
+        </div>
+  </section>
+  <!-- --------about us-section ---------- -->
+  <section class="bg-lightBlack">
+    <div class="container">
+      <div class="flex items-center max-xl:flex-col gap-[60px] max-xl:gap-8 max-lg:gap-6 max-md:gap-5">
+        <div class="w-6/12 max-xl:w-full py-32 max-xl:pt-20  max-md:pt-10 max-sm:pt-7 max-xl:pb-0">
+          <div>
+            <h2 class="font-godzila text-redLight text-7xl max-lg:text-6xl max-md:text-5xl max-sm:3xl font-normal leading-[86.7%] max-md:text-center">About <span class="text-white">Us</span></h2>
+            <p class="max-xl:max-w-none pt-7 text-white text-sm-text max-w-[648px] font-normal leading-[150%] max-md:text-xl max-md:text-center max-sm:pt-3">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <button class="py-3 px-9 w-full max-w-[139px] text-white bg-redLight rounded-lg  text-lg font-bold leading-[150%] mt-8 max-md:mt-5 max-md:mx-auto max-md:flex">Mint NFT</button>
+          </div>
+        </div>
+        <div class="w-6/12 max-xl:w-full pt-16 pb-[135px] max-xl:pb-14 max-sm:pb-5 max-xl:pt-0">
+          <div class="flex items-center max-xl:justify-center max-md:flex-wrap">
+            <img src="/assets/images/svg/about-us-first-img.svg" alt="img">
+            <img src="/assets/images/svg/about-us-img-two.svg" alt="img-two">
+          </div>
+          <div class="flex items-center max-xl:justify-center max-md:flex-wrap">
+            <img src="/assets/images/svg/about-us-img-three.svg" alt="image-three">
+            <img src="/assets/images/svg/about-us-img-four.svg" alt="image-four">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- -----------cards-section-------- -->
+<section class="bg-[url('assets/images/png/crads-bg-img.png')] bg-cover bg-no-repeat pt-[171px] pb-[225px] max-2xl:py-9 max-md:py-5">
+  <h2 class="text-center font-godzila text-redLight text-7xl max-lg:text-6xl max-md:text-5xl max-sm:3xl font-normal leading-[86.7%] uppercase">Kaijuu <span class="text-white"> crew classes</span></h2>
+  <div class="flex items-center justify-evenly mt-20 max-xl:mt-14 max-lg:mt-10 max-sm:mt-5 flex-wrap max-xl:gap-4">
+      <div class="w-full max-w-[254px]">
+          <img src="/assets/images/png/scouts-img.png" alt="scouts-img" class="w-full max-w-[254px]">
+          <p class="text-4xl max-md:text-3xl max-sm:text-2xl text-white font-semibold pt-[18px] text-center">Scouts</p>
+      </div>
+       <div class="w-full max-w-[254px]">
+          <img src="/assets/images/png/heavies-img.png" alt="scouts-img" class="w-full max-w-[254px]">
+          <p class="text-4xl max-md:text-3xl max-sm:text-2xl text-white font-semibold pt-[18px] text-center">Heavies</p>
+      </div>
+       <div class="w-full max-w-[254px]">
+          <div class="bg-[url('assets/images/png/bg-black.png')] bg-no-repeat bg-center bg-cover w-full max-w-[254px] h-[254px] flex items-center justify-center"><p class="text-md-3xl font-normal text-white font-rightoues">?</p></div>
+          <p class="text-4xl max-md:text-3xl max-sm:text-2xl text-white font-semibold pt-[18px] text-center">Legends</p>
+      </div>
+       <div class="w-full max-w-[254px]">
+          <img src="/assets/images/png/elementals-img.png" alt="scouts-img" class="w-full max-w-[254px]">
+          <p class="text-4xl max-md:text-3xl max-sm:text-2xl text-white font-semibold pt-[18px] text-center">Elementals</p>
+      </div>
+       <div class="w-full max-w-[254px]">
+          <div class="bg-[url('assets/images/png/bg-black.png')] bg-no-repeat bg-center bg-cover w-full max-w-[254px] h-[254px] flex items-center justify-center"><p class="text-md-3xl font-normal text-white font-rightoues">?</p></div>
+          <p class="text-4xl max-md:text-3xl max-sm:text-2xl text-white font-semibold pt-[18px] text-center">???</p>
+      </div>
+  </div>
+</section>
+<!-- ---------story-section--------- -->
+<section class="bg-lightBlack">
+  <div class="container">
+    <div class="flex items-center max-lg:flex-wrap gap-[56px] max-xl:gap-7 max-lg:gap-5">
+      <div class="w-6/12 max-lg:w-full pt-16 max-xl:py-10 max-md:py-5 max-sm:py-4 pb-24 ">
+        <img src="/assets/images/svg/transparent-dino.svg" alt="transparent-dino" class="w-full max-w-[702px]">
+      </div>
+      <div class="w-6/12 max-lg:w-full pt-[196px] pb-[228px] max-xl:py-28 max-lg:py-0">
+        <h2 class="font-godzila text-redLight text-7xl max-lg:text-6xl max-md:text-5xl max-sm:3xl font-normal leading-[86.7%] uppercase max-md:text-center">Story</h2>
+        <p class="max-w-[648px] font-normal text-sm-text leading-[150%] pt-7 text-white max-xl:max-w-none max-md:pt-4 max-md:text-xl max-md:text-center">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- --------------traits-section------- -->
+<section class="bg-[url('assets/images/png/traits-bg-img.png')] bg-center bg-cover bg-no-repeat max-xl:py-20 max-lg:py-11 max-md:py-5">
+  <div class="container">
+    <h2 class=" pt-24 max-xl:pt-0 max-2xl:pb-7 max-xl:pb-0 text-center font-godzila text-redLight text-7xl max-lg:text-6xl max-md:text-5xl max-sm:3xl font-normal leading-[86.7%] uppercase">Traits</h2>
+    <div class="flex items-center pb-[156px] max-xl:pb-0 gap-[130px] max-2xl:gap-28 max-xl:gap-10 max-xl:flex-wrap max-xl:justify-center">
+      <div class="w-6/12 max-lg:w-full">
+        <div class="max-lg:flex max-lg:items-center max-lg:justify-center">
+        <img src="/assets/images/png/traits-dino.png" alt="traits-dino" class="max-w-[738px] max-2xl:w-full ">
+        </div>
+      </div>
+      <div class="w-6/12 max-lg:w-full">
+        <div class="max-lg:flex max-lg:items-center max-lg:justify-center">
+        <div class="w-[590px] max-sm:w-full max-sm:max-w-[590px]  border bg-transparent !backdrop-blur-[35px] !backdrop-filter rounded-3xl p-10 max-sm:p-5 blur-1 ">
+                    <p class="text-5xl text-white font-godzila leading-[95%] max-sm:text-3xl max-sm:text-center">
+                        Traits</p>
+                    <div class="bg-white opacity-20 w-full h-1 mt-[26px]"></div>
+                    <div class="flex gap-[179px] mt-[26px] max-sm:flex-wrap max-md:gap-14 max-md:justify-center">
+                        <p class="max-w-[110px] text-white text-sm-text leading-[150%] max-md:text-xl">Background:8
+                            Skins:19
+                            Headwear:37
+                            Clothes:44</p>
+                        <p class="max-w-[110px] text-white text-sm-text max-md:text-xl leading-[150%]">
+                            Eyes:23
+                            Mouth:33
+                            Accessories:7</p>
+                    </div>
+                    <p class="text-5xl text-white font-godzila mt-14 max-md:mt-8 max-sm:mt-5 leading-[95%] max-sm:text-3xl max-sm:text-center">
+                        Stats</p>
+                    <div class="bg-white opacity-20 w-full h-1 mt-[26px] mb-4"></div>
+                    <div class="flex gap-[138px]  max-md:gap-14 max-md:justify-center">
+                        <div>
+                            <p class="text-white text-5xl leading-[150%] font-bold max-md:text-4xl max-sm:text-3xl">9,999</p>
+                            <p class="text-sm-text text-white leading-[150%] mt-1 max-md:text-xl">Total Kaijuu</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-3">
+                                <p class="text-white text-5xl leading-[150%] font-bold max-md:text-4xl max-sm:text-3xl">0.0555</p>
+                                <img src="./assets/images/svg/min-cost-img.svg" alt="min-cost-img">
+                            </div>
+                            <p class="text-sm-text text-white leading-[150%] mt-1 max-md:text-xl">0.0555</p>
+                        </div>
+                    </div>
+        </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ------------------roadmap---------- -->
+<section class="bg-lightBlack h-full w-full pb-[440px] max-xl:pb-0 relative">
+        <div class="container">
+            <h2 class="text-center font-godzila text-redLight text-7xl max-lg:text-6xl max-md:text-5xl max-sm:3xl font-normal leading-[86.7%] pt-20 pb-12 max-xl:py-5 max-sm:py-3">Road-Map</h2>
+            <img src="./assets/images/svg/roadmap-bg-arrows.svg" alt="aroow" class="absolute left-[28%] bottom-[49%] max-2xl:left-[20%] max-xl:hidden">
+             <img src="./assets/images/svg/roadmap-bg-arrows.svg" alt="aroow" class="absolute right-[34%] bottom-[49%] max-2xl:right-[28%] max-xl:hidden">
+            <div class="w-full max-w-[1179px] h-full relative flex max-xl:hidden">
+                <div class="">
+                    <ul class="py-10">
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%] ">Ut eu ac sed duis nec amet.</li>
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%] ">Sed elementum a tortor eros.</li>
+                    </ul>
+                
+                 
+                <div class="mt-5 relative bg-[url('assets/images/png/ring.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] flex items-center justify-center">
+                    <img src="/assets/images/svg/white-line.svg" alt="line" class="absolute top-[-36px] translate-x-1">
+                    <h2 class="text-white text-sm-xl max-md:text-4xl max-sm:text-3xl">Phase-1</h2>
+                       <img src="/assets/images/svg/red-line.svg" alt="red-line" class="absolute right-[-55px] bottom-[-6px]">
+                </div>
+                <div class="relative">
+                  <div class="absolute bg-[url('assets/images/png/ring.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] top-[-66px] flex items-center justify-center left-[252px]">
+                    <img src="/assets/images/svg/white-line.svg" alt="line" class="absolute bottom-[-34px] translate-x-1">
+                    <h2 class="text-white text-sm-xl max-md:text-4xl max-sm:text-3xl">Phase-2</h2>
+                       <img src="/assets/images/svg/redline-two.svg" alt="red-line" class="absolute top-0 right-[-51px]">
+                    
+                </div>
+                 <ul class="absolute bottom-[-336px] translate-x-[295px] w-[308px]">
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%]">Sagittis tristique molestie eupharetra.</li>
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%]">Nibh convallis ornare fringilla diam proin volutpat aliquet nunc.</li>
+                    </ul>
+              </div>
+              <div class="relative">
+                 <ul class="absolute top-[-370px] translate-x-[495px]  w-[358px]">
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%]">Adipiscing velit turpis pretium, tellus.</li>
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%]">Ornare urna arcu, dolor vestibulum.</li>
+                    </ul>
+                 <div class="absolute bg-[url('assets/images/png/ring.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] top-[-238px] left-[500px] flex items-center justify-center">
+                    <img src="/assets/images/svg/white-line.svg" alt="line" class="absolute top-[-34px] translate-x-1">
+                    <h2 class="text-white text-sm-xl max-md:text-4xl max-sm:text-3xl">Phase-3</h2>
+                       <img src="/assets/images/svg/red-line.svg" alt="red-line" class="absolute bottom-0 right-[-54px]">
+                    
+                </div>
+              </div>
+
+              <div class="relative">
+                 <div class="absolute bg-[url('assets/images/png/ring.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] bottom-[-183px] left-[746px] flex items-center justify-center">
+                    <img src="/assets/images/svg/white-line.svg" alt="line" class="absolute bottom-[-34px] translate-x-1">
+                    <h2 class="text-white text-sm-xl max-md:text-4xl max-sm:text-3xl">Phase-4</h2>
+                       <img src="/assets/images/svg/redline-two.svg" alt="red-line" class="absolute top-0 right-[-54px]">
+                    
+                </div>
+                    <ul class="absolute bottom-[-370px] translate-x-[795px] w-[358px]">
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%]">Eget imperdiet mauris interdum ut egestas lacinia lacus.</li>
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%]">Non ipsum, cursus consectetur fringilla aliquam.</li>
+                    </ul>
+              </div>
+
+              <div class="relative">
+                   <ul class="absolute top-[-370px] translate-x-[995px] w-[358px]">
+                        <li class="text-white list-disc text-sm-text font-normal leading-[150%]">Elementum elementum sit mauris amet non.</li>
+                       
+                    </ul>
+                <div class="absolute bg-[url('assets/images/png/ring.png')] bg-no-repeat bg-cover w-full max-w-[217px] h-[245px] top-[-230px] left-[997px] flex items-center justify-center">
+                    <img src="/assets/images/svg/white-line.svg" alt="line" class="absolute top-[-34px] translate-x-1">
+                    <h2 class="text-white text-sm-xl max-md:text-4xl max-sm:text-3xl">Phase-5</h2>
+                      
+                    
+                </div>
+              </div>
+
+                </div>
+            </div>
+             <div class="flex items-center justify-center flex-col gap-3 xl:hidden">
+      <div class="flex items-center gap-[55px] max-sm:gap-7">
+        <div class="felx items-center bg-[url('assets/images/png/ring.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+          <h2 class="text-white text-sm-lg  max-sm:text-2xl">Phase-1</h2>
+        </div>
+        <div>
+          <ul>
+            <li class="text-white list-disc text-sm-text max-md:text-xl font-normal leading-[150%] max-sm:text-base">Ut eu ac sed duis nec amet.</li>
+            <li class="text-white list-disc text-sm-text max-md:text-xl font-normal leading-[150%] max-sm:text-base">Sed elementum a tortor eros.</li>
+          </ul>
+        </div>
+      </div>
+       <div class="flex items-center gap-[55px] max-sm:gap-7 ">
+        <div class="felx items-center bg-[url('assets/images/png/ring.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+          <h2 class="text-white text-sm-lg  max-sm:text-2xl">Phase-2</h2>
+        </div>
+        <div>
+          <ul>
+            <li class="text-white list-disc text-sm-text max-md:text-xl font-normal leading-[150%] max-sm:text-base">Ut eu ac sed duis nec amet.</li>
+            <li class="text-white list-disc text-sm-text max-md:text-xl font-normal leading-[150%] max-sm:text-base">Sed elementum a tortor eros.</li>
+          </ul>
+        </div>
+      </div>
+       <div class="flex items-center gap-[55px] max-sm:gap-7 ">
+        <div class="felx items-center bg-[url('assets/images/png/ring.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+          <h2 class="text-white text-sm-lg  max-sm:text-2xl">Phase-3</h2>
+        </div>
+        <div>
+          <ul>
+            <li class="text-white list-disc text-sm-text font-normal max-md:text-xl leading-[150%] max-sm:text-base">Ut eu ac sed duis nec amet.</li>
+            <li class="text-white list-disc text-sm-text font-normal max-md:text-xl leading-[150%] max-sm:text-base">Sed elementum a tortor eros.</li>
+          </ul>
+        </div>
+      </div>
+       <div class="flex items-center gap-[55px] max-sm:gap-7 ">
+        <div class="felx items-center bg-[url('assets/images/png/ring.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+          <h2 class="text-white text-sm-lg  max-sm:text-2xl">Phase-4</h2>
+        </div>
+        <div>
+          <ul>
+            <li class="text-white list-disc text-sm-text font-normal max-md:text-xl leading-[150%] max-sm:text-base">Ut eu ac sed duis nec amet.</li>
+            <li class="text-white list-disc text-sm-text font-normal max-md:text-xl leading-[150%] max-sm:text-base">Sed elementum a tortor eros.</li>
+          </ul>
+        </div>
+      </div>
+       <div class="flex items-center gap-[55px] max-sm:gap-7 ">
+        <div class="felx items-center bg-[url('assets/images/png/ring.png')] w-[217px] h-[245px] max-sm:w-[150px] max-sm:h-[168px] flex justify-center bg-cover bg-no-repeat">
+          <h2 class="text-white text-sm-lg  max-sm:text-2xl">Phase-5</h2>
+        </div>
+        <div>
+          <ul>
+            <li class="text-white list-disc text-sm-text max-md:text-xl font-normal leading-[150%] max-sm:text-base">Ut eu ac sed duis nec amet.</li>
+            <li class="text-white list-disc text-sm-text max-md:text-xl font-normal leading-[150%] max-sm:text-base">Sed elementum a tortor eros.</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+        </div>
+  </section>
+  <!---------------------Team-section-------  -->
+  <section class="pt-[72px] pb-[123px] max-xl:py-20 max-md:py-10 max-sm:py-5 bg-lightBlack">
+        <p
+            class="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl text-redLight text-center mb-14 max-md:md-12 max-sm:mb-5 font-godzila leading-[95%] ">
+            Team</p>
+        <div class="flex max-2xl:flex-col max-w-[1535px] mx-auto items-center">
+            <div class="prev-parent max-2xl:!hidden">
+                <img class="prev transition-all ease-linear duration-300 max-w-[74px]"
+                    src="./assets/images/svg/red-prev-arrow.svg" alt="red-prev-arrow">
+            </div>
+            <div class="container">
+                <div class="flex slider">
+
+                    <div class="max-w-[424px] max-sm:max-w-[350px]">
+                        <img src="./assets/images/svg/blank-slide.svg" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl max-sm:text-2xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2 max-sm:mt-1 max-sm:text-base max-xl:mb-5">KJC#29
+                        </p>
+                    </div>
+                    <div class="max-w-[424px] max-sm:max-w-[350px]">
+                        <img src="./assets/images/svg/blank-slide.svg" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl max-sm:text-2xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2 max-sm:mt-1 max-sm:text-base max-xl:mb-5">KJC#29
+                        </p>
+                    </div>
+                    <div class="max-w-[424px] max-sm:max-w-[350px]">
+                        <img src="./assets/images/svg/boss-kaijuu-dino.svg" alt="boss-kaiju">
+                        <p class="font-normal text-white text-center text-4xl max-sm:text-2xl">Boss Kaijuu</p>
+                        <p class="font-normal text-white text-center text-lg mt-2 max-sm:mt-1 max-sm:text-base max-xl:mb-5">KJC#29
+                        </p>
+                    </div>
+                    <div class="max-w-[424px] max-sm:max-w-[350px]">
+                        <img src="./assets/images/svg/blank-slide.svg" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl max-sm:text-2xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2 max-sm:mt-1 max-sm:text-base max-xl:mb-5">KJC#29
+                        </p>
+                    </div>
+                    <div class="max-w-[424px] max-sm:max-w-[350px]">
+                        <img src="./assets/images/svg/blank-slide.svg" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl max-sm:text-2xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2 max-sm:mt-1 max-sm:text-base max-xl:mb-5">KJC#29
+                        </p>
+                    </div>
+                    <div class="max-w-[424px] max-sm:max-w-[350px]">
+                        <img src="./assets/images/svg/boss-kaijuu-dino.svg" alt="boss-kaiju">
+                        <p class="font-normal text-white text-center text-4xl max-sm:text-2xl">Boss Kaijuu</p>
+                        <p class="font-normal text-white text-center text-lg mt-2 max-sm:mt-1 max-sm:text-base max-xl:mb-5">KJC#29
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="next-parent max-2xl:!hidden">
+                <img class="next transition-all ease-linear duration-300 max-w-[74px]"
+                    src="./assets/images/svg/red-next-arrow.svg" alt="red-next-arrow">
+            </div>
+        </div>
+    </section>
+    <!-- ----------------faq-section-------- -->
+    <section class="bg-[url('assets/images/png/faq-bg-img.png')] bg-cover bg-bottom -mt-1 pt-[106px] max-xl:py-16 max-md:py-9 max-sm:py-5 relative">
+      <div class="bg-gardient w-full top-0 absolute z-40"></div>
+        <div class="container flex flex-col justify-center px-3 mx-auto max-w-[1320px] w-full pb-[120px] max-xl:pb-10 max-md:pb-5 items-center">
+            <div>
+                <h2
+                    class="lg:text-7xl text-redLight md:text-5xl text-4xl font-godzila max-w-[670px] text-primary text-center leading-none xl:mb-[55px] lg:mb-6 mb-4">
+                    FAQ<span class="text-white font-godzila lg:text-sm-xl sm:text-4xl text-3xl">s</span>
+                </h2>
+            </div>
+            <div class="max-w-[830px] w-full space-y-[17px]" id="accordion-container">
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item backdrop-blur-[35px] !border-opacity-[15%] border-[1px] border-white bg-custom-gradient lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    onclick="toggleAccordion(this)">
+                    <div class="flex justify-between text-white items-center font-bold lg:text-sm-text text-base">
+                        <span>Volutpat gravida sapien in purus</span>
+                        <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
+                            viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.63729 0L5.5 4.82292L1.36271 0L0 1.58854L5.5 8L11 1.58854L9.63729 0Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div
+                        class="accordion-content max-w-[751px] lg:mt-[34px] md:mt-6 mt-4 lg:text-sm-text text-base text-white">
+                        Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
+                        nullam mi diam sit nisi consectetur non etiam diam.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item !border-opacity-[15%] border-white backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    onclick="toggleAccordion(this)">
+                    <div class="flex justify-between text-white items-center font-bold lg:text-sm-text text-base">
+                        <span>Volutpat gravida sapien in purus</span>
+                        <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
+                            viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.63729 0L5.5 4.82292L1.36271 0L0 1.58854L5.5 8L11 1.58854L9.63729 0Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div
+                        class="accordion-content max-w-[751px] lg:mt-[34px] md:mt-6 mt-4 lg:text-sm-text text-base text-white">
+                        Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
+                        nullam mi diam sit nisi consectetur non etiam diam.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item !border-opacity-[15%] border-white backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    onclick="toggleAccordion(this)">
+                    <div class="flex justify-between text-white items-center font-bold lg:text-sm-text text-base">
+                        <span>Volutpat gravida sapien in purus</span>
+                        <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
+                            viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.63729 0L5.5 4.82292L1.36271 0L0 1.58854L5.5 8L11 1.58854L9.63729 0Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div
+                        class="accordion-content max-w-[751px] lg:mt-[34px] md:mt-6 mt-4 lg:text-sm-text text-base text-white">
+                        Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
+                        nullam mi diam sit nisi consectetur non etiam diam.
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="accordion-item !border-opacity-[15%] border-white backdrop-blur-[35px] bg-custom-gradient border-[1px] lg:py-[21px] md:py-4 py-3 lg:px-8 md:px-5 px-4 rounded-[10px] cursor-pointer"
+                    onclick="toggleAccordion(this)">
+                    <div class="flex justify-between text-white items-center font-bold lg:text-sm-text text-base">
+                        <span>Volutpat gravida sapien in purus</span>
+                        <svg class="accordion-icon transition-transform duration-300" width="11" height="8"
+                            viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.63729 0L5.5 4.82292L1.36271 0L0 1.58854L5.5 8L11 1.58854L9.63729 0Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div
+                        class="accordion-content max-w-[751px] lg:mt-[34px] md:mt-6 mt-4 lg:text-sm-text text-base text-white">
+                        Ac pretium feugiat sed id ut viverra nunc lacus, pulvinar purus malesuada adipiscing nisl
+                        nullam mi diam sit nisi consectetur non etiam diam.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container flex flex-col justify-center pb-[60px] mx-auto max-w-[1320px] w-full items-center">
+            <a href=""
+                class="lg:text-4xl text-3xl lg:mt-[72px] mt-14 font-godzila max-w-[670px] text-redLight text-center leading-none xl:mb-[28px] lg:mb-6 mb-4">
+                Kaijuu<span class="text-white font-godzila">Crew</span>
+            </a>
+            <div class="flex gap-[24px] max-h-[41px] lg:mb-7 md:mb-5 mb-4">
+                <a href="https://x.com/i/flow/login" target="_blank"><img
+                        class="hover:scale-[1.09] transition-all duration-300 ease-linear"
+                        src="./assets/images/svg/twitter-icon.svg" alt="twitter-icon"></a>
+                <a href="https://discord.com/" target="_blank"><img class="hover:scale-[1.09] transition-all duration-300 ease-linear"
+                        src="./assets/images/svg/dicord-icons-footer.svg" alt="discord-icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        class="hover:scale-[1.09] transition-all duration-300 ease-linear"
+                        src="./assets/images/svg/instagram-icon.svg" alt="instagram-icon"></a>
+                <a href="https://opensea.io/" target="_blank"><img class="hover:scale-[1.09] transition-all duration-300 ease-linear"
+                        src="./assets/images/svg/ship-icon.svg" alt="ship-icon"></a>
+            </div>
+            <p class="lg:text-sm-text lg:text-base text-sm text-white">Copyright Â© Kaijuu Crew <span
+                    class="year"></span>
+            </p>
+        </div>
+         <div class="bg-gardient w-full bottom-0 absolute z-40"></div>
+    </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
